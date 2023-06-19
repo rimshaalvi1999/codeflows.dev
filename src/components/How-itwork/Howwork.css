@@ -11,7 +11,7 @@
 }
 
  
-img{
+#howworkspic{
   max-width: 100%;
   min-height: 250px;
   height: auto;
@@ -42,11 +42,41 @@ img{
   place-items: center;
 } 
 
-.how-work-content .content-heading h2{
-  margin-bottom: 10px;
-  padding: 0 0 0 70px;
+.content-heading{
+  /* border: 1px solid black; */
+  display: flex;
+  width: 100%;
+  
 }
 
+.how-work-content .content-heading h2{
+  /* margin-bottom: 10px; */
+  /* padding: 0 0 0 70px; */
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-left: 10px; */
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media screen and (max-width:767px){
+
+  .how-work-content .content-heading h2{
+    font-size: 2.5rem;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 991px){
+  .how-work-content .content-heading h2 {
+    font-size: 3rem;
+}
+}
 
 .how-work-content ul{
   padding: 0 10px 0 50px;
@@ -58,6 +88,12 @@ img{
 .how-work-content ul li{
   padding: 0 10px 0 0;
   margin-top: 20px;
+  font-size: larger;
   /* border: 1px solid green; */
 }
 
+
+.btn-started{
+  margin-top: 10%;
+  margin-left: 10px;
+}

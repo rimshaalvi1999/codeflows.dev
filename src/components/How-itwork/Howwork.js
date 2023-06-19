@@ -23,10 +23,9 @@ export default function Howwork() {
       </div>
     </div> */}
 <div className='how-works'>
-
 <div className='how-works-pic'>
   {/* <div className='iconn'> */}
-   <img src={myImage} alt="" />
+   <img id='howworkspic' src={myImage} alt="" />
   {/* </div> */}
   
 </div>
@@ -44,6 +43,7 @@ export default function Howwork() {
             <li>Receive your tasks within a few business days on average, Monday to Friday.</li>
           </ul>
         </div>
+          <a href="#"  className='button w-button btn-started  '>Get Started</a>
       </div>
 </div>
 </div>

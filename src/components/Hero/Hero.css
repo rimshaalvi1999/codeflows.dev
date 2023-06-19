@@ -53,12 +53,12 @@ img {
 
 
 .padding-section-large.bottom-padding-large-on-desktop {
-  padding-bottom: 14rem;
+  /* padding-bottom: 14rem; */
 }
 
 .padding-section-large {
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  /* padding-bottom: 8rem; */
 }
 
 .home-header_component {
@@ -227,6 +227,8 @@ p {
   font-weight: 500;
   transition: border-radius .2s cubic-bezier(.25,.46,.45,.94),border-color .2s cubic-bezier(.25,.46,.45,.94),background-color .2s cubic-bezier(.25,.46,.45,.94),color .2s cubic-bezier(.25,.46,.45,.94),box-shadow .2s cubic-bezier(.25,.46,.45,.94);
   box-shadow: 3px 3px #000;
+  /* margin-left: 40%; */
+  margin-bottom: 10%;
 }
 
 
@@ -240,7 +242,21 @@ p {
   /* padding: 9px 15px; */
   text-decoration: none;
   display: inline-block;
+  
 }
+
+.button:hover {
+  box-shadow: 5px 5px 0px 0px #000;
+  background-color: transparent;
+  color: #fa8000;
+  border: 2px solid #fa8000;
+  border-radius: 1rem;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
 
 a{
   opacity: 1;
@@ -250,4 +266,108 @@ a{
 
 
 
+ @media screen and (max-width:767px){
+  h1{
+    font-size: 2.6275rem;
+  }
+ }
 
+
+ /*  styling elements */
+
+ .icon_orange-bracket-header {
+  width: 5rem;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  /* transform: translate3d(-50px, 0, 0);  */
+ }
+
+  
+ .icon_blue-bracket-header{
+ width: 5rem;
+  position: absolute;
+  bottom: auto;
+  top: 40%;
+  left: auto;
+  right: 0%;
+
+ }
+
+@media screen and (max-width:560px){
+   .icon_orange-bracket-header,
+   .icon_blue-bracket-header{
+    display: none;
+   }
+ }
+ @media screen and (min-width:1280px){
+  .icon_orange-bracket-header,
+  .icon_blue-bracket-header
+  {
+   width: 8rem;
+  }
+}
+
+
+.icon_start-left-header {
+  width: 1.5em;
+  position: absolute;
+  top: 30%;
+  bottom: auto;
+  left: 5%;
+  right: auto;
+  transform: translateY(-50%);
+}
+
+.icon_start-right-header {
+  width: 1.5em;
+  position: absolute;
+  bottom: 12vw;
+  left: auto;
+  right: 20vw;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 479px){
+.icon_start-left-header {
+    margin-top: 12%;
+    /* margin-left: ; */
+}
+}
+@media screen and (max-width: 479px){
+.icon_start-right-header {
+    bottom: 100px;
+}
+}
+
+
+
+@media screen and (max-width: 991px){
+.icon_start-left-header {
+    width: 1em;
+    display: block;
+    top: 14%;
+    left: 11%;
+}
+
+
+.icon_start-right-header {
+    width: 1.5em;
+    right: 10%;
+}
+
+
+}
+
+
+@media screen and (max-width: 767px){
+.icon_start-right-header {
+    bottom: 20vw;
+}
+
+.icon_start-left-header {
+    top: 10%;
+}
+}

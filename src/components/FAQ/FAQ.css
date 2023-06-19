@@ -1,0 +1,139 @@
+.FAQ-main {
+
+  height: fit-content;
+  /* border: 1px solid black; */
+  /* place-items: center; */
+  padding: 100px 50px 20px 50;
+  display: grid;
+}
+
+.FAQ-heading{
+  /* margin-bottom: 10vh; */
+}
+
+.FAQ-heading h2 {
+  font-size: 3.5rem;
+  font-weight: 500px;
+  line-height: 1;
+  font-family: sans-serif;
+  text-align: center;
+  color: #000;
+}
+
+.FAQ-cards-content {
+
+  width: 90vw;
+  display: grid;
+
+  padding: 50px 50px;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, minmax(250px, 1fr));
+  place-items: center;
+  column-gap: 5px;
+  row-gap: 40px;
+  /* border: 1px solid red; */
+}
+
+
+.outer-extenal{
+  /* border: 1px solid green; */
+  margin-top: 5vh;
+}
+
+.external{
+  /* border: 1px solid purple; */
+
+  border-bottom: 2px solid black;
+}
+
+.title-heading{
+  color: #000;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 20px 0;
+
+}
+
+p{
+  margin-bottom: 10px;
+}
+.acordian-part{
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+
+.acordian-part:active{
+  /* transform: rotate(-0.25turn); */
+  transition: transform 0.3s ease;
+}
+
+@media (max-width:395px){
+  .FAQ-cards-content{
+     justify-content: center;
+  }
+  .title-heading{
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width:1180px) {
+
+  .FAQ-cards-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+}
+
+@media (min-width:2300px) {
+  .FAQ-cards-content {
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+
+
+.FAQ-Predictable-Pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 1px solid black; */
+  /* padding: 5px 40px; */
+  /* text-align: center; */
+  /* position: relative; */
+  overflow: hidden;
+  padding: 50px 50px 80px 50px;
+  /* place-items: center; */
+}
+
+.arrow-image{
+  width: 35px;
+  height: 32px;
+  /* border: 1px solid black; */
+  background-image: url(https://assets.website-files.com/6390ccac206b2dabb754420e/63984f5164d52cde10d4109b_faq-icon.svg) !important;
+}
+
+
+.row-title-text{
+  /* border: 1px solid black; */
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.arrow-image svg {
+  /* viewport-fit: 0 24 24 0; */
+  fill: transparent !important;
+}
+
+@media screen and (max-width:767px){
+  .row-title-text{
+    font-size: 1.5rem;
+  }
+ }
+

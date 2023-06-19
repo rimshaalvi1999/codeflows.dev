@@ -1,0 +1,109 @@
+
+.reviews-main{
+  height: fit-content;
+  /* border: 1px solid black; */
+  /* place-items: center; */
+  padding: 100px 0 20px 0;
+  display: grid;
+  background-color: white;
+  /* background-image: radial-gradient(circle,rgba(83,36,6,0.9416141456582633) 0%, rgba(10,28,55,1) 100%) !important; */
+}
+
+.review-heading h2 {
+  font-size: 3.5rem;
+  font-weight: 500px;
+  line-height: 1;
+  font-family: sans-serif;
+  /* text-align: center; */
+  /* color: #000; */
+  /* color: white; */
+  color: black;
+}
+
+.review-heading{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.inner-div-internalpart-1
+{
+  width: 98.7vw;
+  height: fit-content;
+  display: grid;
+  padding: 50px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 40px;
+  row-gap: 40px;
+  /* border: 1px solid red; */
+  position: relative;
+  
+  place-items: center;
+}
+
+.carousel{
+  /* display: flex; */
+  position: relative;
+  /* display: grid; */
+  /* margin: 0 0 50px 0; */
+  /* width: 90vw; */
+  width: 100%;
+  /* border: 1px solid purple; */
+  place-items: center;
+}
+
+
+/* .internal-review{
+ border: 1px solid green;
+ place-items: center;
+ width: 100%;
+
+
+} */
+
+
+.internal-review .image-review{
+  /* max-width: 100%; */
+  min-height: 200px;
+  height: auto;
+  /* border: 1px solid black; */
+    width: 71vw;
+
+}
+#portfolio-projects-pic{
+
+  max-width: 99%;
+  min-height: 200px;
+  height: auto;
+}
+
+
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  padding-right: 10px;
+  color: gray;
+}
+
+button:active{
+  color: orangered;
+
+}
+
+button:focus{
+  color: orangered;
+}
+
+
+@media screen and (max-width:375px) {
+     
+ .carousel{
+  margin-bottom: 0;
+ }
+
+}

@@ -1,0 +1,134 @@
+.footer-main {
+
+  /* height: 120vh; */
+  height: fit-content;
+  /* border: 1px solid black; */
+  place-items: center;
+  padding: 10px 40px 10px 40px;
+  display: grid;
+  /* margin-top: 40px; */
+  /* background: rgb(10,28,55); */
+background-image: radial-gradient(circle,rgba(83,36,6,0.9416141456582633) 0%, rgba(10,28,55,1) 100%);
+}
+
+.upper-div {
+  padding: 100px 80px 10px 80px;
+  width: 100%;
+}
+
+@media (max-width:416px){
+  .upper-div{
+    padding: 10px 0 10px 0;
+  }
+}
+
+.headings {
+  height: fit-content;
+  /* border: 1px solid black; */
+  /* margin: 0 120px; */
+}
+
+.headings h2 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 500px;
+  line-height: 1;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.paras,.btn-pr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* border: 1px solid red; */
+}
+
+@media (min-width:1140px){
+  .headings,
+  .paras,
+  .btn-pr{
+    margin: 0 120px;
+  }
+}
+
+
+.paras p {
+  width: 70%;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 400px;
+  /* line-height: 2.5rem; */
+}
+
+/* /////////////////////////////////////////// */
+
+
+.lower-div{
+  width: 100%;
+  /* height: 100px; */
+  height: fit-content;
+  /* border: 1px solid red; */
+  place-items: center;
+  padding: 10px 40px 10px 40px;
+  display: grid;
+  position: relative;
+  background-color: rgb(29, 24, 24);
+}
+
+.lower-inner-div{
+  /* border: 1px solid black; */
+  width: 100%;
+  /* height: 75px; */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   position: relative;
+   padding-top: 10px;
+   color: white;
+   
+  }
+  
+  .lower-inner-div .copyright-div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.social-ul{
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+ list-style-type: none;
+ /* position: absolute; */
+}
+
+.social-ul li{
+  
+  padding: 0 10px;
+};
+
+
+
+@media screen and (min-width: 1280px){
+.icon_orange-bracket-footer, .icon_blue-bracket-footer {
+    width: 7rem;
+}
+
+}
+
+.icon_orange-bracket-footer {
+  width: 5rem;
+  position: absolute;
+  /* top: 0%; */
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
